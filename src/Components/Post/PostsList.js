@@ -6,7 +6,11 @@ import { TimeAgo } from "./TimeAgo";
 import { ReactionButtons } from "./ReactionsButton";
 
 export const PostsList = () => {
+  // const dispatch = useDispatch();
+  // const posts = useSelector(selectAllPost);
+
   const posts = useSelector((state) => state.posts);
+  // const postStatus = useSelector((state) => state.posts.posts.status);
 
   const orderedPosts = posts
     .slice()
@@ -14,8 +18,8 @@ export const PostsList = () => {
 
   return orderedPosts.map((post) => {
     return (
-      <div className="post">
-        <div className="postTitle" key={post.id}>
+      <div className="post" key={post.id}>
+        <div className="postTitle">
           <h2>{post.title}</h2>
           <div>
             <PostAuthor userId={post.user} />

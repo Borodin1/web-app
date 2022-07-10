@@ -30,5 +30,5 @@ export const ReactionButtons = ({ post }) => {
       </button>
     );
   });
-  return <div>{reactionButtons} </div>;
+  return <div className="reactionButton">{reactionButtons} </div>;
 };

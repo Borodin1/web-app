@@ -128,5 +128,46 @@ button.reaction-button {
 .signatureBy {
   display: flex;
   justify-content: flex-end;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.reactionButton {
+  padding-bottom: 10px;
+}
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.user {
+  padding: 0.55rem 0.25rem;
+  border: 1px solid rgb(177, 174, 174);
+  border-radius: 7px;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user img {
+  border-radius: 100px;
+}
+
+.usersList {
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.userPhotoName {
+  display: flex;
+  align-items: center;
+}
+
+.userPhotoName h2 {
+  padding-left: 20px;
 }

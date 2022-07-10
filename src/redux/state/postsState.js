@@ -29,4 +29,10 @@ const initialState = [
   },
 ];
 
+// const initialState = {
+//   posts: [],
+//   status: "idle",
+//   eror: null,
+// };
+
 export default initialState;

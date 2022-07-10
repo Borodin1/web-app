@@ -19,18 +19,24 @@ export const SinglePostPage = () => {
     );
   }
   return (
-    <div className="singlePost">
-      <h2>{post.title}</h2>
-      <p className="postContent">{post.content}</p>
-      <Link to={`/editPost/${post.id}`} className="button">
-        Edit Post
-      </Link>
-      <Link to="/" className="button">
-        Back Home
-      </Link>
-      <PostAuthor userId={post.user} />
-      <TimeAgo timestamp={post.date} />
-      <ReactionButtons post={post} />
+    <div className="post">
+      <div className="postTitle">
+        <div className="singlePost">
+          <h2>{post.title}</h2>
+          <p className="postContent">{post.content}</p>
+          <ReactionButtons post={post} />
+          <div className="linkState">
+            <Link to={`/editPost/${post.id}`} className="button">
+              Edit Post
+            </Link>
+            <Link to="/" className="button">
+              Back Home
+            </Link>
+          </div>
+          <PostAuthor userId={post.user} />
+          <TimeAgo timestamp={post.date} />
+        </div>
+      </div>
     </div>
   );
 };
